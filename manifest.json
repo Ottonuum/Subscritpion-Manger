@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Subscription Manager",
+    "version": "1.0",
+    "description": "Track and manage your subscriptions",
+    "permissions": [
+        "storage",
+        "alarms",
+        "notifications",
+        "identity"
+    ],
+    "host_permissions": [
+        "https://www.googleapis.com/*",
+        "https://accounts.google.com/*"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "subscription-manager",
+  "version": "1.0.0",
+  "description": "Chrome extension to manage subscriptions and track expiration dates",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chrome-extension",
+    "subscription",
+    "manager"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^3.1.0"
+  }
+}
